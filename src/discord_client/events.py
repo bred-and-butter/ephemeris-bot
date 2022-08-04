@@ -1,5 +1,7 @@
-from discord_client import client
+from discord_client import bot
 
-@client.event
+
+@bot.event
 async def on_ready():
-    print(f"{client.user} connected")
+    print(f"{bot.user} connected")
+

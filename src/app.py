@@ -1,4 +1,4 @@
-from discord_client import client
+from discord_client import bot
 from consts import TOKEN
 
-client.run(TOKEN)
+bot.run(TOKEN)

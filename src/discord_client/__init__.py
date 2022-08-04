@@ -1,5 +1,8 @@
-import discord
+from discord.ext.commands import Bot
+from consts import PREFIX
 
-client = discord.Client()
+bot = Bot(command_prefix=PREFIX)
+
 
 from .events import on_ready
+from .commands import *
