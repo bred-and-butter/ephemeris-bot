@@ -1,5 +1,5 @@
-{
-    "january": {
+EPHEMERIS_DICT = {
+    1: {
         1: [
             "Ano Novo",
             "Confraternização Universal",
@@ -19,14 +19,14 @@
         19: ["Dia Oficial do Cabeleireiro"],
         20: ["Dia do Farmacêutico"],
     },
-    "february": {
+    2: {
         1: ["Dia do Publicitário"],
         2: ["Dia de Jesus Cristo", "Dia de Nossa Senhora dos Navegantes"],
         24: ["Promulgação da primeira Constituição da República do Brasil (1891)[2]"],
         25: ["Carnaval (Data Móvel)"],
         26: ["Quarta-feira de cinzas (Data Móvel)"],
     },
-    "march": {
+    3: {
         8: ["Dia Internacional da Mulher"],
         12: ["Dia do Bibliotecário"],
         14: ["Dia dos Carecas[3]"],
@@ -36,7 +36,7 @@
         20: ["Início do Outono"],
         27: ["Dia Mundial do Teatro", "Dia do Graffiti"],
     },
-    "april": {
+    4: {
         1: ["Dia da Mentira", "Dia da Abolição da Escravidão dos Índios - 1680"],
         2: [
             "Dia Mundial de Conscientização do Autismo",
@@ -70,7 +70,7 @@
         29: ["Dia Internacional da Dança"],
         30: ["Dia Nacional da Mulher"],
     },
-    "may": {
+    5: {
         1: ["Dia do Trabalhador"],
         6: ["Dia Nacional da Matemática[4]", "Dia do Cartógrafo"],
         7: ["Dia Mundial do Silêncio"],
@@ -105,7 +105,7 @@
         ],
         31: ["Dia do Comissário de Voo"],
     },
-    "june": {
+    6: {
         5: ["Dia Mundial do meio ambiente"],
         8: ["Dia do Cunhado"],
         11: ["Dia da Marinha Brasileira[5]"],
@@ -118,7 +118,7 @@
         24: ["Dia de São João"],
         29: ["Dia de São Pedro[10][11]", "Dia de São Paulo (Santo)", "Dia do Dublador"],
     },
-    "july": {
+    7: {
         2: ["Independência da Bahia[12]"],
         8: ["Dia Nacional do Pesquisador[13]"],
         13: ["Dia Mundial do Rock"],
@@ -126,7 +126,7 @@
         20: ["Dia do Amigo"],
         26: ["Dia dos Avós"],
     },
-    "august": {
+    8: {
         9: ["Dia dos Pais (Data Móvel)"],
         11: ["Dia do Estudante"],
         13: ["Dia mundial do canhoto"],
@@ -136,7 +136,7 @@
         27: ["Dia do Psicólogo", "Dia do Corretor de Imóveis"],
         31: ["Dia do Nutricionista"],
     },
-    "september": {
+    9: {
         1: ["Dia do Profissional de Educação Física"],
         3: ["Dia Nacional do Biólogo"],
         5: ["Dia da Amazônia", "Dia dos Irmãos"],
@@ -155,7 +155,7 @@
         26: ["Dia Nacional dos Surdos"],
         30: ["Dia da Secretaria"],
     },
-    "october": {
+    10: {
         1: ["Dia do Vendedor"],
         8: ["Dia do Nordestino"],
         12: [
@@ -170,7 +170,7 @@
         28: ["Dia do Servidor Público"],
         31: ["Dia da Reforma Protestante", "Dia das Bruxas (Halloween)"],
     },
-    "november": {
+    11: {
         1: ["Dia de Todos os Santos"],
         2: ["Dia de Finados"],
         7: ["Dia do Radialista"],
@@ -181,7 +181,7 @@
         20: ["Dia da Consciência Negra", "Dia do Biomédico"],
         23: ["Dia do Engenheiro Eletricista"],
     },
-    "december": {
+    12: {
         4: ["Dia do Orientador Educacional", "Dia do Perito Criminal"],
         7: ["Dia Nacional da Silvicultura", "Dia Internacional da Aviação Civil"],
         8: ["Dia da Justiça"],
