@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from discord_client import bot
+from bot_instance import bot
 from date_info.provider import provide_today_info
 
 
@@ -11,7 +11,7 @@ async def health_check(ctx):
 
 @bot.command(name="dayinfo")
 async def day_info(ctx):
-    await ctx.send(f"A informação do momento é: {datetime.now()}\n{provide_today_info()}")
+    await ctx.send(f"A data e hora atuais são: {datetime.now()}\n{provide_today_info()}")
 
 
 @bot.command(name="exit")
