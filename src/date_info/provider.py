@@ -17,4 +17,3 @@ def provide_date_info(year: int, month: int, day: int) -> str:
 
 def format_date_info(selected_date: datetime, answer: str):
     return f"Data selecionada: {selected_date.day}/{selected_date.month}/{selected_date.year}\n{answer}"
-    # print(f"Data selecionada: {selected_date}\n{answer}")
