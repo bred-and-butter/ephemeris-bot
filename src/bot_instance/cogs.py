@@ -17,9 +17,7 @@ class BasicCog(commands.Cog):
 
     @commands.command(name="dayinfo")
     async def day_info(self, ctx):
-        await ctx.send(
-            f"A data e hora atuais são: {datetime.now()}\n{provide_date_info(year=0, month=0, day=0)}"
-        )
+        await ctx.send(f"{provide_date_info(year=0, month=0, day=0)}")
 
     @commands.command(name="exit")
     async def shutdown(self, ctx):
@@ -41,10 +39,23 @@ class JobCog(commands.Cog):
             self.bot.dispatch("send_day_info", channel, message)
         else:
             print("error getting channel")
-    
+
     @commands.Cog.listener(name="on_send_day_info")
     async def send_day_info(self, channel, message):
         await channel.send(message)
+
+    @commands.command(name="startjob")
+    async def start_job(self, ctx):
+        try:
+            self.job_check.start()
+            await ctx.send("Tarefa iniciada")
+        except RuntimeError:
+            await ctx.send("Erro, tarefa já está rodando")
+
+    @commands.command(name="stopjob")
+    async def stop_job(self, ctx):
+        self.job_check.stop()
+        await ctx.send("Tarefa parada")
 
     @tasks.loop(seconds=int(JOB_CHECK_PERIOD))
     async def job_check(self):
